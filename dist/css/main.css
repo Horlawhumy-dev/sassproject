@@ -1,0 +1,31 @@
+body {
+  background-color: lightgray;
+  color: #fff;
+  font: verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0 2em;
+}
+
+.logo h2 {
+  color: #333;
+  padding: 0;
+}
+
+nav ul {
+  margin: 1em 2em;
+  list-style: none;
+  display: flex;
+}
+nav li {
+  padding: 0;
+  margin: 0 1em;
+}/*# sourceMappingURL=main.css.map */

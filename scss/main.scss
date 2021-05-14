@@ -1,5 +1,5 @@
-@import 'base';
-$main-color : red;
+@import 'variables';
+@import 'utilities';
 
 body{
     background-color: base.$primary-color;
@@ -10,8 +10,7 @@ body{
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
+    @include flexCenter;
 }
 
 .logo{
@@ -33,7 +32,7 @@ nav{
     ul{
         margin: 1em 2em;
         list-style: none;
-        display:$display;
+        @include flex;
     }
 
     li{

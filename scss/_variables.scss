@@ -1,6 +1,10 @@
-$font-stack:  verdana, sans-serif;
-$primary-color: lightgray;
-$light-color: #fff;
-$header-color: #333;
+$primary-black: #333;
+$primary-white: #fff;
+$secondary-color: rgb(255, 1, 158);
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

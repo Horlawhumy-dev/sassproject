@@ -1,0 +1,17 @@
+@mixin flexCenter($prop) {
+    @if (#{$prop} == 'center') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }@else if (#{$prop} == 'row'){
+        justify-content: center;
+        text-align: center;
+    }@else{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@mixin  transition-ease {
+    transition: all .5s ease-in-out;
+}

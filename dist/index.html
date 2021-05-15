@@ -4,44 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.css">
-    <title>Sass Project</title>
+    <title>HaroffCode PortFolio</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h2>LOGO</h2>
+    <header class="header">
+        <div class="header__links">
+            <nav class="nav">
+                <ul>
+                    <li class="nav-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-link">
+                <span class="menu-link__burger"></span>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <aside>
-            <div class="aside">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, numquam inventore sunt harum quia laboriosam ipsam perferendis et ducimus libero ab neque provident placeat quaerat necessitatibus, accusamus labore vel molestiae!
-                </p>
-            </div>
-        </aside>
-        <section>
-            <div class="mx-1">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis eum commodi. Optio autem maxime quibusdam quasi quas quis quam esse, a praesentium, magnam ipsa. Sunt illum at dolorum in!
-                </p>
-            </div>
-            <div class="mx-2">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quasi inventore ex autem vitae repellat facilis deserunt beatae ducimus? Modi qui unde assumenda nesciunt ut porro optio repellat asperiores nam.
-                </p>
+        <section class="home">
+            <div class="home__content">
+                <!-- <img src="images/Engineer Haroff.jpg" alt="HaroffCode Picture"> -->
+                <div class="home__content--showcase">
+                    <p>Hi! I am <h2>Arafat <span class="last-name">Olayiwola</span></h2></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque maxime 
+                        esse, et voluptatum aspernatur necessitatibus amet vel cum, fugit doloribus corporis 
+                        nam magni, tempora mollitia doloremque! Laboriosam ad quidem odio.</p>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#!"><i class="fa fa-twitter"></i></a>
+                <a href="#!"><i class="fa fa-linkedin"></i></a>
+                <a href="#!"><i class="fa fa-github"></i></a>
+                <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                &copy; Copyright HaroffCode 2021.</div>
+        </div>
+      
+    </footer>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>

@@ -1,42 +1,125 @@
 @import 'variables';
-@import 'utilities';
+@import 'config';
+@import 'responsive';
 
-body{
-    background-color: base.$primary-color;
-    color: $light-color;
-    font: $font-stack;
-    margin: 0;
-    padding: 0;
+body {
+    height: 100vh;
+    font-size: 1.2rem;
+    font-family: $font-stack;
+    line-height: 1.5;
+    background: $secondary-color;
 }
 
-header{
-    @include flexCenter;
+h1, h2, h3, h4{
+    color: $primary-white;
 }
 
-.logo{
-    margin: 0 2em;
+p{
+    color: $primary-black;
 }
 
-.logo {
-    h2{
-        color: $header-color;
-        padding: 0;
-    }
+a{
+    text-decoration: none;
 }
 
-// @mixins display($property) {
-//     display :$property;
-// }
+.header{
+    height: 20vh;
+    width: 100%;
+    padding: 1rem;
+    
+    &__links{
+        width: 100%;
+            
+        .menu-link{
+            position: absolute;
+            top: 2rem;
+            right: 3rem;
+            z-index: 1;
+            
+            
+            .open{
+                transform: rotate(720deg);
+            }
 
-nav{
-    ul{
-        margin: 1em 2em;
-        list-style: none;
-        @include flex;
-    }
+            &__burger{
+                position: absolute;
+                width: 28px;
+                height: 3px;
+                background: $primary-white;
+                z-index: 1;
+                cursor: pointer;
+                
 
-    li{
-        padding: 0;
-        margin: 0 1em;
-    }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 28px;
+                    height: 3px;
+                    background: $primary-white;
+                    top: -8px;
+
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 21px;
+                    height: 3px;
+                    background: $primary-white;
+                    top: 8px;
+
+                }
+
+            }
+
+        }
+        nav{
+            // &.open{
+            //     position: relative;
+            //     top: 0;
+            //     left: 0;
+            //     height: 100vh;
+            //     width: 100%;
+            //     transform: translateY(0);
+            //     @include transition-ease;
+            //     visibility: visible;
+            // }
+
+            .nav{
+                background: $primary-black;
+                visibility: hidden;
+                position: relative;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                transform: translateY(-100%);
+                @include transition-ease;
+
+                
+                ul{
+                    @include flexCenter('center');
+                    list-style: none;
+    
+                    .nav-link{
+                        margin: 0 1rem;
+    
+                        a{
+                            color: $primary-white;
+                            font-size: larger;
+    
+                            &:focus, &:hover{
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+    
+                }
+    
+            }
+                
+             
+            }
+        }
 }
+
